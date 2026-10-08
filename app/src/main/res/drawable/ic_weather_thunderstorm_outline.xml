@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="52dp"
+    android:height="52dp"
+    android:viewportWidth="64"
+    android:viewportHeight="64">
+
+    <group
+        android:name="thunderCloud">
+
+        <path
+            android:fillColor="@android:color/transparent"
+            android:pathData="M15,37L49,37C54.5,37 59,32.5 59,27C59,21.5 54.5,17 49,17C47.5,17 46.1,17.3 44.8,17.9C42.2,13.1 37.2,10 31.5,10C23.2,10 16.5,16.7 16.5,25C10,25.1 5,27.8 5,31.5C5,34.6 9.5,37 15,37Z"
+            android:strokeColor="#AEB7BE"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round"
+            android:strokeWidth="2.5" />
+
+    </group>
+
+    <group
+        android:name="lightning"
+        android:alpha="1">
+
+        <path
+            android:fillColor="@android:color/transparent"
+            android:pathData="M34,40L27,49L34,49L29,57L43,45L36,45L41,40"
+            android:strokeColor="#F2C94C"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round"
+            android:strokeWidth="3" />
+
+    </group>
+
+</vector>

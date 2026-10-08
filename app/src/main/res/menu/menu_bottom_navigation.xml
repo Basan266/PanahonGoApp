@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/bottomNavigationGroup"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/navHome"
+            android:enabled="true"
+            android:icon="@drawable/ic_nav_home"
+            android:orderInCategory="1"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/navActivities"
+            android:enabled="true"
+            android:icon="@drawable/ic_nav_activities"
+            android:orderInCategory="2"
+            android:title="Activities" />
+
+        <item
+            android:id="@+id/navMap"
+            android:checkable="true"
+            android:checked="true"
+            android:enabled="true"
+            android:icon="@drawable/ic_nav_map"
+            android:orderInCategory="3"
+            android:title="Map" />
+
+        <item
+            android:id="@+id/navForecast"
+            android:enabled="true"
+            android:icon="@drawable/ic_nav_forecast"
+            android:orderInCategory="4"
+            android:title="Forecast" />
+
+        <item
+            android:id="@+id/navProfile"
+            android:enabled="true"
+            android:icon="@drawable/ic_nav_profile"
+            android:orderInCategory="5"
+            android:title="Profile" />
+
+    </group>
+
+</menu>

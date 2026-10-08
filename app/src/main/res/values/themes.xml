@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style
+        name="Theme.WeatherApp"
+        parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <item name="colorPrimary">#202020</item>
+        <item name="colorPrimaryVariant">#202020</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+
+        <item name="android:fontFamily">sans</item>
+        <item name="android:navigationBarColor">#202020</item>
+        <item name="android:statusBarColor">#202020</item>
+        <item name="android:windowLightStatusBar">false</item>
+
+    </style>
+
+</resources>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#202020"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Step 4 of 4 -->
+        <LinearLayout
+            android:id="@+id/linearLayout8"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="6dp"
+                android:layout_weight="1"
+                android:background="#fff" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="6dp"
+                android:layout_weight="1"
+                android:background="#fff" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="6dp"
+                android:layout_weight="1"
+                android:background="#fff" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#fff" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="When do you usually spend time outdoors?"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout8"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout8"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout8" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose your usual outdoor times so we can recommend the best weather window for you."
+            android:textColor="#B5B5B5"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView7"
+            app:layout_constraintStart_toStartOf="@+id/textView7"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+        <GridLayout
+            android:layout_marginTop="30dp"
+            android:id="@+id/gridLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@+id/textView14"
+            app:layout_constraintStart_toStartOf="@+id/textView14"
+            app:layout_constraintTop_toBottomOf="@+id/textView14">
+
+            <ToggleButton
+                android:id="@+id/btnEarlyMorning"
+                style="@style/OutdoorActivityButton"
+                android:textOff="🌅  Early morning"
+                android:textOn="🌅  Early morning" />
+
+            <ToggleButton
+                android:id="@+id/btnMorning"
+                style="@style/OutdoorActivityButton"
+                android:textOff="☀  Morning"
+                android:textOn="☀  Morning" />
+
+            <ToggleButton
+                android:id="@+id/btnMidday"
+                style="@style/OutdoorActivityButton"
+                android:textOff="🌞  Midday"
+                android:textOn="🌞  Midday" />
+
+            <ToggleButton
+                android:id="@+id/btnAfternoon"
+                style="@style/OutdoorActivityButton"
+                android:textOff="🌤  Afternoon"
+                android:textOn="🌤  Afternoon" />
+
+            <ToggleButton
+                android:id="@+id/btnEvening"
+                style="@style/OutdoorActivityButton"
+                android:textOff="🌙  Evening"
+                android:textOn="🌙  Evening" />
+
+            <ToggleButton
+                android:id="@+id/btnWeekdays"
+                style="@style/OutdoorActivityButton"
+                android:textOff="📅  Weekdays"
+                android:textOn="📅  Weekdays" />
+
+            <ToggleButton
+                android:id="@+id/btnWeekends"
+                style="@style/OutdoorActivityButton"
+                android:textOff="🏕  Weekends"
+                android:textOn="🏕  Weekends" />
+
+        </GridLayout>
+
+
+
+        <Button
+            android:id="@+id/btnFinish"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="#00FFFFFF"
+            android:enabled="false"
+            android:text="Finish setup"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/btnSkip"
+            app:layout_constraintEnd_toEndOf="@+id/btnSkip"
+            app:layout_constraintStart_toStartOf="@+id/btnSkip" />
+
+        <Button
+            android:id="@+id/btnSkip"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="#00FFFFFF"
+            android:text="Skip"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

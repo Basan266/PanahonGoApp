@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/customBottomNavigation"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:background="@drawable/bg_bottom_navigation"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingStart="12dp"
+    android:paddingEnd="12dp">
+
+    <!-- Home -->
+    <LinearLayout
+        android:id="@+id/navHomeButton"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivNavHome"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:contentDescription="Home"
+            android:src="@drawable/ic_nav_home"
+            app:tint="#777784" />
+
+        <View
+            android:id="@+id/indicatorHome"
+            android:layout_width="20dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="5dp"
+            android:background="#F0F0F0"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <!-- Activities -->
+    <LinearLayout
+        android:id="@+id/navActivitiesButton"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivNavActivities"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:contentDescription="Activities"
+            android:src="@drawable/ic_nav_activities"
+            app:tint="#777784" />
+
+        <View
+            android:id="@+id/indicatorActivities"
+            android:layout_width="20dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="5dp"
+            android:background="#F0F0F0"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <!-- Map -->
+    <LinearLayout
+        android:id="@+id/navMapButton"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivNavMap"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:contentDescription="Map"
+            android:src="@drawable/ic_nav_map"
+            app:tint="#F0F0F0" />
+
+        <View
+            android:id="@+id/indicatorMap"
+            android:layout_width="20dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="5dp"
+            android:background="#F0F0F0"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+    <!-- Forecast -->
+    <LinearLayout
+        android:id="@+id/navForecastButton"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivNavForecast"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:contentDescription="Forecast"
+            android:src="@drawable/ic_nav_forecast"
+            app:tint="#777784" />
+
+        <View
+            android:id="@+id/indicatorForecast"
+            android:layout_width="20dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="5dp"
+            android:background="#F0F0F0"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <!-- Profile -->
+    <LinearLayout
+        android:id="@+id/navProfileButton"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivNavProfile"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:contentDescription="Profile"
+            android:src="@drawable/ic_nav_profile"
+            app:tint="#777784" />
+
+        <View
+            android:id="@+id/indicatorProfile"
+            android:layout_width="20dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="5dp"
+            android:background="#F0F0F0"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+</LinearLayout>

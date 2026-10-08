@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="52dp"
+    android:height="52dp"
+    android:viewportWidth="64"
+    android:viewportHeight="64">
+
+    <!-- Cloud -->
+    <path
+        android:fillColor="@android:color/transparent"
+        android:pathData="M15,34L49,34C54.5,34 59,29.5 59,24C59,18.5 54.5,14 49,14C47.5,14 46.1,14.3 44.8,14.9C42.2,10.1 37.2,7 31.5,7C23.2,7 16.5,13.7 16.5,22C16.5,22.4 16.5,22.7 16.6,23C10.1,23.1 5,25.5 5,29C5,31.8 9.5,34 15,34Z"
+        android:strokeColor="#AEB7BE"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:strokeWidth="2.5" />
+
+    <!-- First falling group -->
+    <group android:name="rainDrop1"
+        android:translateY="4">
+
+        <path
+            android:fillColor="#56B8F5"
+            android:pathData="M12,38C12,38 9.8,41.2 9.8,42.7C9.8,44 10.8,45 12,45C13.2,45 14.2,44 14.2,42.7C14.2,41.2 12,38 12,38Z" />
+
+        <path
+            android:fillColor="#2F80ED"
+            android:pathData="M36,47C36,47 33.8,50.2 33.8,51.7C33.8,53 34.8,54 36,54C37.2,54 38.2,53 38.2,51.7C38.2,50.2 36,47 36,47Z" />
+
+        <path
+            android:fillColor="#76C9FF"
+            android:pathData="M54,40C54,40 52.2,42.7 52.2,44C52.2,45.1 53,46 54,46C55,46 55.8,45.1 55.8,44C55.8,42.7 54,40 54,40Z" />
+
+    </group>
+
+    <!-- Second falling group -->
+    <group android:name="rainDrop2"
+        android:translateY="4">
+
+        <path
+            android:fillColor="#2F80ED"
+            android:pathData="M21,43C21,43 18.8,46.2 18.8,47.7C18.8,49 19.8,50 21,50C22.2,50 23.2,49 23.2,47.7C23.2,46.2 21,43 21,43Z" />
+
+        <path
+            android:fillColor="#76C9FF"
+            android:pathData="M45,37C45,37 43.2,39.7 43.2,41C43.2,42.1 44,43 45,43C46,43 46.8,42.1 46.8,41C46.8,39.7 45,37 45,37Z" />
+
+        <path
+            android:fillColor="#56B8F5"
+            android:pathData="M8,50C8,50 6.2,52.7 6.2,54C6.2,55.1 7,56 8,56C9,56 9.8,55.1 9.8,54C9.8,52.7 8,50 8,50Z" />
+
+    </group>
+
+    <!-- Third falling group -->
+    <group android:name="rainDrop3"
+        android:translateY="4">
+
+        <path
+            android:fillColor="#76C9FF"
+            android:pathData="M29,37C29,37 26.8,40.2 26.8,41.7C26.8,43 27.8,44 29,44C30.2,44 31.2,43 31.2,41.7C31.2,40.2 29,37 29,37Z" />
+
+        <path
+            android:fillColor="#2F80ED"
+            android:pathData="M51,49C51,49 48.8,52.2 48.8,53.7C48.8,55 49.8,56 51,56C52.2,56 53.2,55 53.2,53.7C53.2,52.2 51,49 51,49Z" />
+
+        <path
+            android:fillColor="#56B8F5"
+            android:pathData="M16,52C16,52 14.2,54.7 14.2,56C14.2,57.1 15,58 16,58C17,58 17.8,57.1 17.8,56C17.8,54.7 16,52 16,52Z" />
+
+    </group>
+
+    <!-- Fourth falling group -->
+    <group android:name="rainDrop4"
+        android:translateY="4">
+
+        <path
+            android:fillColor="#56B8F5"
+            android:pathData="M39,38C39,38 36.8,41.2 36.8,42.7C36.8,44 37.8,45 39,45C40.2,45 41.2,44 41.2,42.7C41.2,41.2 39,38 39,38Z" />
+
+        <path
+            android:fillColor="#76C9FF"
+            android:pathData="M27,50C27,50 24.8,53.2 24.8,54.7C24.8,56 25.8,57 27,57C28.2,57 29.2,56 29.2,54.7C29.2,53.2 27,50 27,50Z" />
+
+        <path
+            android:fillColor="#2F80ED"
+            android:pathData="M58,45C58,45 56.2,47.7 56.2,49C56.2,50.1 57,51 58,51C59,51 59.8,50.1 59.8,49C59.8,47.7 58,45 58,45Z" />
+
+    </group>
+
+</vector>

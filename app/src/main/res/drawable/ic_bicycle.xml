@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="32dp"
+    android:height="32dp"
+    android:viewportWidth="32"
+    android:viewportHeight="32">
+
+    <!-- Direction indicator -->
+    <path
+        android:fillColor="#C65CF4"
+        android:pathData="M16,0.5 L12.8,4.8 L19.2,4.8 Z" />
+
+    <!-- Bicycle wheels -->
+    <path
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#202020"
+        android:strokeWidth="3.8"
+        android:pathData="M16,5
+            a4,4 0,1 0,0,8
+            a4,4 0,0 0,0,-8
+            M16,19
+            a5,5 0,1 0,0,10
+            a5,5 0,0 0,0,-10" />
+
+    <path
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#F0F0F0"
+        android:strokeWidth="2.2"
+        android:pathData="M16,5
+            a4,4 0,1 0,0,8
+            a4,4 0,0 0,0,-8
+            M16,19
+            a5,5 0,1 0,0,10
+            a5,5 0,0 0,0,-10" />
+
+    <!-- Bicycle frame -->
+    <path
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#F0F0F0"
+        android:strokeWidth="2.2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M16,9
+            L11.5,19
+            L20.5,19
+            Z
+            M16,9
+            L16,19
+            M12,10
+            L20,10
+            M16,5
+            L16,9" />
+
+    <!-- Rider -->
+    <path
+        android:fillColor="#C65CF4"
+        android:strokeColor="#202020"
+        android:strokeWidth="0.7"
+        android:pathData="M16,10.5
+            a2.7,2.7 0,1 0,0,5.4
+            a2.7,2.7 0,0 0,0,-5.4
+            M13.5,15
+            L18.5,15
+            L20,21
+            L17.5,22
+            L16,18.5
+            L14.5,22
+            L12,21
+            Z" />
+
+    <!-- Rider highlight -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M14.8,11.5
+            a0.9,0.9 0,1 0,0,1.8
+            a0.9,0.9 0,0 0,0,-1.8" />
+
+</vector>

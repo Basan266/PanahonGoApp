@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_confirmation_dialog"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:paddingStart="26dp"
+    android:paddingTop="28dp"
+    android:paddingEnd="26dp"
+    android:paddingBottom="22dp">
+
+    <ImageView
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:contentDescription="Email confirmation"
+        android:src="@drawable/ic_email_confirmation" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:gravity="center"
+        android:text="Confirm your email address"
+        android:textColor="#F5F5F5"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:gravity="center"
+        android:text="We sent a confirmation email to:"
+        android:textColor="#A5A5A5"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tvConfirmationEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="Check your email and click the confirmation link to continue."
+        android:textColor="#A5A5A5"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tvResendResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/progressResend"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="16dp"
+        android:indeterminateTint="#C65CF4"
+        android:visibility="gone" />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/btnDialogResend"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="20dp"
+        android:text="Resend email"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:background="#202020" />
+
+    <TextView
+        android:id="@+id/tvCloseDialog"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:gravity="center"
+        android:text="Close"
+        android:textColor="#A5A5A5"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

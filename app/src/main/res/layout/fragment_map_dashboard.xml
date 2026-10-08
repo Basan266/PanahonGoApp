@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mapDashboardRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#202020">
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageButton
+        android:id="@+id/btnExitNavigation"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_gravity="top|start"
+        android:layout_margin="16dp"
+        android:background="@drawable/bg_onboarding_input"
+        android:contentDescription="Exit navigation"
+        android:elevation="10dp"
+        android:padding="12dp"
+        android:src="@android:drawable/ic_media_previous"
+        android:visibility="gone"
+        app:tint="#FFFFFF" />
+
+    <LinearLayout
+        android:id="@+id/search_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_onboarding_input"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+
+        <com.google.android.material.button.MaterialButtonToggleGroup
+            android:id="@+id/routeModeGroup"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:gravity="center"
+            app:selectionRequired="true"
+            app:singleSelection="true">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/rbWalking"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:checked="true"
+                android:gravity="center"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="🚶  Walk"
+                android:textAllCaps="false"
+                android:textColor="@color/route_mode_text"
+                android:textSize="12sp"
+                app:backgroundTint="@color/route_mode_background"
+                app:cornerRadius="10dp"
+                app:strokeColor="@color/route_mode_border"
+                app:strokeWidth="0.5dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/rbMotorcycle"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:gravity="center"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="🚲  Bike"
+                android:textAllCaps="false"
+                android:textColor="@color/route_mode_text"
+                android:textSize="12sp"
+                app:backgroundTint="@color/route_mode_background"
+                app:cornerRadius="10dp"
+                app:strokeColor="@color/route_mode_border"
+                app:strokeWidth="0.5dp" />
+
+        </com.google.android.material.button.MaterialButtonToggleGroup>
+
+
+        <LinearLayout
+            android:layout_marginTop="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <AutoCompleteTextView
+                android:id="@+id/etPlaceSearch"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:completionThreshold="3"
+                android:dropDownHeight="wrap_content"
+                android:dropDownVerticalOffset="8dp"
+                android:hint="Search outdoor destination"
+                android:imeOptions="actionSearch"
+                android:inputType="textPostalAddress"
+                android:maxLines="1"
+                android:paddingStart="3dp"
+                android:paddingEnd="8dp"
+                android:textColor="#B5B5B5"
+                android:textColorHint="#B5B5B5"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/ivSearchIcon"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+
+                android:contentDescription="Search"
+                android:padding="5dp"
+                android:src="@drawable/search" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_marginTop="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="#A1FFFFFF"/>
+
+        <TextView
+            android:id="@+id/tvSearchResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Showing your current location"
+            android:textColor="#B5B5B5"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+
+
+    <ProgressBar
+        android:id="@+id/progressWeather"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center"
+        android:indeterminateTint="#C65CF4"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/weatherPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/bg_dashboard_panel"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Safety status -->
+
+        <TextView
+            android:id="@+id/tvOutdoorStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Checking conditions…"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvOutdoorMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:maxLines="2"
+            android:text="Getting the latest weather for your location."
+            android:textColor="#AFAFAF"
+            android:textSize="12sp" />
+
+        <!-- Main weather information -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <!-- Temperature -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CURRENT WEATHER"
+                    android:textColor="#8E8E8E"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvTemperature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="--°C"
+                    android:textColor="#FFFFFF"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!-- Condition -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CONDITION"
+                    android:textColor="#8E8E8E"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvCondition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:maxLines="1"
+                    android:text="Loading…"
+                    android:textColor="#C65CF4"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Divider -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="#30FFFFFF" />
+
+        <!-- Humidity and wind -->
+
+        <TextView
+            android:id="@+id/tvWeatherDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Humidity: --%   •   Wind: -- km/h"
+            android:textColor="#D0D0D0"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</FrameLayout>

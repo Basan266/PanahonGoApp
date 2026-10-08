@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#202020"
+    android:layout_gravity="center"
+    android:scrollbars="none"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="6dp"
+                android:layout_weight="1"
+                android:background="#fff" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="6dp"
+                android:layout_weight="1"
+                android:background="#fff" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="6dp"
+                android:layout_weight="1"
+                android:background="#555555" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#555555" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="What do you do outdoors regularly?"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout5"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout5"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Help us understand your outdoor life so we can give you weather insights that actually matter to you."
+            android:textColor="#B5B5B5"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView5"
+            app:layout_constraintStart_toStartOf="@+id/textView5"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <GridLayout
+            android:id="@+id/activityGrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:columnCount="2"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@+id/textView6"
+            app:layout_constraintStart_toStartOf="@+id/textView6"
+            app:layout_constraintTop_toBottomOf="@+id/textView6">
+
+            <ToggleButton
+                android:id="@+id/btnRunning"
+                style="@style/OutdoorActivityButton"
+                android:textOff="🏃  Running"
+                android:textOn="🏃  Running" />
+
+            <ToggleButton
+                android:id="@+id/btnCycling"
+                style="@style/OutdoorActivityButton"
+                android:textOff="🚴  Cycling"
+                android:textOn="🚴  Cycling" />
+
+            <ToggleButton
+                android:id="@+id/btnGardening"
+                style="@style/OutdoorActivityButton"
+                android:textOff="🌱  Gardening"
+                android:textOn="🌱  Gardening" />
+
+            <ToggleButton
+                android:id="@+id/btnGolf"
+                style="@style/OutdoorActivityButton"
+                android:textOff="⛳  Golf"
+                android:textOn="⛳  Golf" />
+
+            <ToggleButton
+                android:id="@+id/btnBeach"
+                style="@style/OutdoorActivityButton"
+                android:textOff="🏖  Beach"
+                android:textOn="🏖  Beach" />
+
+            <ToggleButton
+                android:id="@+id/btnHiking"
+                style="@style/OutdoorActivityButton"
+                android:textOff="🥾  Hiking"
+                android:textOn="🥾  Hiking" />
+
+            <ToggleButton
+                android:id="@+id/btnKidsSports"
+                style="@style/OutdoorActivityButton"
+                android:textOff="⚽  Kids sports"
+                android:textOn="⚽  Kids sports" />
+
+            <ToggleButton
+                android:id="@+id/btnDogWalking"
+                style="@style/OutdoorActivityButton"
+                android:textOff="🐕  Dog walking"
+                android:textOn="🐕  Dog walking" />
+
+            <ToggleButton
+                android:id="@+id/btnSurfing"
+                style="@style/OutdoorActivityButton"
+                android:textOff="🏄  Surfing"
+                android:textOn="🏄  Surfing" />
+
+            <ToggleButton
+                android:id="@+id/btnSailing"
+                style="@style/OutdoorActivityButton"
+                android:textOff="⛵  Sailing"
+                android:textOn="⛵  Sailing" />
+
+            <ToggleButton
+                android:id="@+id/btnFarming"
+                style="@style/OutdoorActivityButton"
+                android:textOff="🚜  Farming"
+                android:textOn="🚜  Farming" />
+
+            <ToggleButton
+                android:id="@+id/btnFlying"
+                style="@style/OutdoorActivityButton"
+                android:textOff="✈  Flying"
+                android:textOn="✈  Flying" />
+
+        </GridLayout>
+
+        <Button
+            android:id="@+id/btnContinue"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="#00FFFFFF"
+            android:enabled="false"
+            android:text="Continue"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/btnSkip"
+            app:layout_constraintEnd_toEndOf="@+id/btnSkip"
+            app:layout_constraintStart_toStartOf="@+id/btnSkip" />
+
+        <Button
+            android:id="@+id/btnSkip"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="#00FFFFFF"
+            android:text="Skip"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

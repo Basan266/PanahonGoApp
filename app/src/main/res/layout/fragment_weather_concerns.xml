@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#202020"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Step 3 of 4 -->
+        <LinearLayout
+            android:id="@+id/linearLayout7"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="6dp"
+                android:layout_weight="1"
+                android:background="#fff" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="6dp"
+                android:layout_weight="1"
+                android:background="#fff" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="6dp"
+                android:layout_weight="1"
+                android:background="#fff" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#555555" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="What weather conditions matter most to you?"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout7"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout7"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout7" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose the conditions you want us to prioritize in your forecasts and alerts."
+            android:textColor="#B5B5B5"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView9"
+            app:layout_constraintStart_toStartOf="@+id/textView9"
+            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+        <GridLayout
+            android:layout_marginTop="30dp"
+            android:id="@+id/gridLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@+id/textView12"
+            app:layout_constraintStart_toStartOf="@+id/textView12"
+            app:layout_constraintTop_toBottomOf="@+id/textView12">
+
+            <ToggleButton
+                android:id="@+id/btnRain"
+                style="@style/OutdoorActivityButton"
+                android:textOff="🌧  Rain"
+                android:textOn="🌧  Rain" />
+
+            <ToggleButton
+                android:id="@+id/btnExtremeHeat"
+                style="@style/OutdoorActivityButton"
+                android:textOff="🌡  Extreme heat"
+                android:textOn="🌡  Extreme heat" />
+
+            <ToggleButton
+                android:id="@+id/btnStrongWind"
+                style="@style/OutdoorActivityButton"
+                android:textOff="💨  Strong wind"
+                android:textOn="💨  Strong wind" />
+
+            <ToggleButton
+                android:id="@+id/btnHumidity"
+                style="@style/OutdoorActivityButton"
+                android:textOff="💧  High humidity"
+                android:textOn="💧  High humidity" />
+
+            <ToggleButton
+                android:id="@+id/btnUvExposure"
+                style="@style/OutdoorActivityButton"
+                android:textOff="☀  UV exposure"
+                android:textOn="☀  UV exposure" />
+
+            <ToggleButton
+                android:id="@+id/btnAirQuality"
+                style="@style/OutdoorActivityButton"
+                android:textOff="🍃  Air quality"
+                android:textOn="🍃  Air quality" />
+
+            <ToggleButton
+                android:id="@+id/btnThunderstorms"
+                style="@style/OutdoorActivityButton"
+                android:textOff="⛈  Thunderstorms"
+                android:textOn="⛈  Thunderstorms" />
+
+            <ToggleButton
+                android:id="@+id/btnVisibility"
+                style="@style/OutdoorActivityButton"
+                android:textOff="🌫  Poor visibility"
+                android:textOn="🌫  Poor visibility" />
+
+        </GridLayout>
+
+
+        <Button
+            android:id="@+id/btnContinue"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="#00FFFFFF"
+            android:enabled="false"
+            android:text="Continue"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/btnSkip"
+            app:layout_constraintEnd_toEndOf="@+id/btnSkip"
+            app:layout_constraintStart_toStartOf="@+id/btnSkip" />
+
+        <Button
+            android:id="@+id/btnSkip"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="#00FFFFFF"
+            android:text="Skip"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

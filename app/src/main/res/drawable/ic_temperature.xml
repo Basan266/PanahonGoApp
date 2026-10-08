@@ -1,0 +1,29 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="32dp"
+    android:height="32dp"
+    android:viewportWidth="32"
+    android:viewportHeight="32">
+
+    <!-- Thermometer outline -->
+    <path
+        android:fillColor="@android:color/transparent"
+        android:pathData="M13,6 A3,3 0,0 1,19 6 L19,18.2 A7,7 0,1 1,13 18.2 Z"
+        android:strokeColor="#C7CDD3"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:strokeWidth="1.8" />
+
+    <!-- Red temperature level -->
+    <path
+        android:fillColor="@android:color/transparent"
+        android:pathData="M16,8 L16,21"
+        android:strokeColor="#FF5A5F"
+        android:strokeLineCap="round"
+        android:strokeWidth="2.2" />
+
+    <!-- Red bulb -->
+    <path
+        android:fillColor="#FF5A5F"
+        android:pathData="M16,19.5 A3.5,3.5 0,1 1,15.99 19.5 Z" />
+
+</vector>
